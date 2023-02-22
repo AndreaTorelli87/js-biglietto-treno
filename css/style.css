@@ -2,3 +2,12 @@
    font-family: sans-serif;
 }
 
+body{
+   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2326618.jpg&f=1&nofb=1&ipt=4a7d3d20338f59ce4047c89a32a7dd037a2228d31af9f208e5b4520f82972e7f&ipo=images);
+   background-size: cover;
+   height: 100vh;
+}
+
+main{
+   background-color: rgba(0,0,0,0.6);
+}
