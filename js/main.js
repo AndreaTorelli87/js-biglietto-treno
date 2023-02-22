@@ -12,38 +12,25 @@ L’output del prezzo finale va messo fuori in forma umana (con massimo due deci
 const km = parseInt(prompt("Quanti Km devi percorrere"));
 const eta = parseInt(prompt("Quanti anni hai?"));
 
-const prezzoPieno = (km * 0.21).toFixed(2);
-console.log("Il prezzo del biglietto è: " + prezzoPieno + "€");
+const prezzoPieno = (km * 0.21);
+console.log("Il prezzo del biglietto è: " + (prezzoPieno).toFixed(2) + "€");
 
-
-const sconto20 = (prezzoPieno / 100 * 20).toFixed(2); //per sapere di quanto verrà scontato il prezzo
-const sconto40 = (prezzoPieno / 100 * 40).toFixed(2); //per sapere di quanto verrà scontato il prezzo
+const sconto20 = (prezzoPieno / 100 * 20); //per sapere di quanto verrà scontato il prezzo
+const sconto40 = (prezzoPieno / 100 * 40); //per sapere di quanto verrà scontato il prezzo
 
 let prezzoFinale;
 
 if (eta <= 17) {
-   console.log("Ti facciamo uno sconto di: " + sconto20 + "€");
+   console.log("Ti facciamo uno sconto di: " + (sconto20).toFixed(2) + "€");
    prezzoFinale = sconto20 + prezzoPieno;
 } else if (eta >= 65) {
-   console.log("Ti facciamo uno sconto di: " + sconto40 + "€");
+   console.log("Ti facciamo uno sconto di: " + (sconto40).toFixed(2) + "€");
    prezzoFinale = sconto40 + prezzoPieno;
 } else {
    console.log("Non sono previsti sconti!");
    prezzoFinale = prezzoPieno;
 }
 
-console.log(prezzoFinale)
-
-
-// console.log("Il prezzo finale è: " + prezzoFinale + "€");
-
-
-
-
-
-
-
-
-
+console.log("Il prezzo finale è: " + (prezzoFinale).toFixed(2) + "€");
 
 console.log("Fine!");
