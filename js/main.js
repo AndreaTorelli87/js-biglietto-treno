@@ -25,10 +25,10 @@ let prezzoFinale;
 
 if (eta <= 17) {
    document.getElementById("sconto").innerHTML = "Visto che sei un* pischell*, ti facciamo uno sconto di: " + (sconto20).toFixed(2) + "€";
-   prezzoFinale = sconto20 + prezzoPieno;
+   prezzoFinale = prezzoPieno - sconto20;
 } else if (eta >= 65) {
    document.getElementById("sconto").innerHTML = "Sconto vecchi di: " + (sconto40).toFixed(2) + "€";
-   prezzoFinale = sconto40 + prezzoPieno;
+   prezzoFinale = prezzoPieno - sconto40;
 } else {
    document.getElementById("sconto").innerHTML = "tè un sfighé...";
    prezzoFinale = prezzoPieno;
